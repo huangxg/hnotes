@@ -64,61 +64,61 @@ bao.hnotes = {
     }, {
       title: 'CSS',
       sections: [
-        { title: '样式类别' },
-        { title: '样式目标' },
-        { title: '彩色' },
-        { title: '盒子' },
+        { title: 'CSS locations' },
+        { title: 'Selectors' },
+        { title: 'Colors' },
+        { title: 'Box model' },
       ]
     }, {
       title: 'Text Styles',
       sections: [
-        { title: '字体' },
-        { title: '文字修饰' },
-        { title: '间距' },
-        { title: '对齐' },
+        { title: 'Fonts' },
+        { title: 'Font decorations' },
+        { title: 'Spacing' },
+        { title: 'Alignments' },
       ]
     }, {
       title: 'List Styles',
       sections: [
-        { title: '图标' },
-        { title: '序号' },
-        { title: '位置' },
+        { title: 'Bullets' },
+        { title: 'Numbering' },
+        { title: 'Positions' },
       ]
     }, {
       title: 'Image Styles',
       sections: [
-        { title: '尺寸' },
-        { title: '对齐' },
-        { title: '背景' },
+        { title: 'Sizes' },
+        { title: 'Alignments' },
+        { title: 'Backgound' },
       ]
     }, {
       title: 'Table Styles',
       sections: [
-        { title: '表格标签样式' },
-        { title: '边框样式' },
-        { title: '间距样式' },
+        { title: 'Elements' },
+        { title: 'Borders' },
+        { title: 'Spacing' },
       ]
     }, {
       title: 'Layouts',
       sections: [
-        { title: '定位' },
-        { title: '浮动' },
-        { title: '定宽布局' },
-        { title: '自适应布局' },
+        { title: 'Positions' },
+        { title: 'Floats' },
+        { title: 'Fixed width' },
+        { title: 'Responsive' },
       ]
     }, {
-      title: 'Website Development',
+      title: 'Web Development',
       sections: [
-        { title: '需求分析' },
-        { title: '导航设计' },
-        { title: '网页托管' },
+        { title: 'Requirements' },
+        { title: 'Navigation' },
+        { title: 'Hosting' },
       ]
     }, {
       title: 'Tools and Resources',
       sections: [
-        { title: '文本编辑器' },
-        { title: '图像工具' },
-        { title: '版本管理' },
+        { title: 'Text editors' },
+        { title: 'Image tools' },
+        { title: 'Version control' },
       ]
     }
   ],

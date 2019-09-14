@@ -32,14 +32,23 @@ html:lang(zh) h3.chapter::before {
 }
 
 h4.section {
+  padding: 0.25rem 0;
   counter-increment: section;
 }
 h4.section::before {
   content: counter(chapter) "." counter(section) " ";
+  margin-right: 0.5rem;
 }
 
 p {
   text-indent: 2em;
+}
+
+p::first-letter {
+  text-transform: uppercase;
+  font-size: 1.25em;
+  font-family: Garamond, Palatino, serif;
+  letter-spacing: 1px;
 }
 
 a {
