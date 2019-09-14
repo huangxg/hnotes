@@ -1,6 +1,7 @@
 /* structures */
 body {
   counter-reset: part chapter section footnote;
+  font-family: source-serif-pro, serif;
 }
 
 h2 {
@@ -60,6 +61,11 @@ a {
   color: #696969;
   text-align: center;
   line-height: 24px;
+}
+
+.publisher {
+  text-align: center;
+  font-size: 1.5rem
 }
 
 .toc {
