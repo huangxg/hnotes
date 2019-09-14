@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* structures */
+body {
+  counter-reset: part chapter section footnote;
+}
+
+h2 {
+  padding: 1.25rem 0;
+}
+h2.part {
+  counter-increment: part;
+}
+h2.part::before {
+  content: "第" counter(part) "部分 ";
+}
+
+h3 {
+  padding: 1rem 0;
+}
+h3.chapter {
+  counter-increment: chapter;
+  counter-reset: section;
+}
+
+html:lang(en) h3.chapter::before {
+  content: "Chapter " counter(chapter) " ";
+  margin-right: 1rem;
+}
+html:lang(zh) h3.chapter::before {
+  content: "第" counter(chapter) "章 ";
+}
+
+h4.section {
+  counter-increment: section;
+}
+h4.section::before {
+  content: counter(chapter) "." counter(section) " ";
+}
+
+p {
+  text-indent: 2em;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.title {
+  margin: 3rem auto;
+  padding: 3rem;
+  text-align: center;
+}
+
+.author {
+  padding: 24px;
+  color: #696969;
+  text-align: center;
+  line-height: 24px;
+}
+
+.toc {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.toc-chapter-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toc-sections {
+  display: none;
+  padding-left: 2rem;
+}
+
+.toc .chapter {
+  margin-bottom: 0;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+}
+.toc .section {
+  font-size: 1rem;
+}
+
+.toc-toggle-all {
+  display: block;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.toc-toggle {
+  line-height: 2;
+  vertical-align: middle;
+  font-size: 1.25rem;
+}
+
+/*# sourceMappingURL=book.css.map */
