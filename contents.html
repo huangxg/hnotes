@@ -35,9 +35,7 @@
       </div>
 
       <toc-chapter v-for="chp in chapters" :chapter="chp" :key="chp.title">
-        <!-- <div class="toc-sections"> -->
-          <toc-section slot-scope="scope" :section="scope.section"></toc-section>
-        <!-- </div> -->
+        <toc-section slot-scope="scope" :section="scope.section"></toc-section>
       </toc-chapter>
     </div>
   </div>

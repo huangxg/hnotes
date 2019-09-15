@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* structures */
 body {
-  counter-reset: part chapter section footnote;
+  counter-reset: part chapter section example footnote;
   font-family: source-serif-pro, serif;
 }
 
@@ -34,6 +34,7 @@ html:lang(zh) h3.chapter::before {
 h4.section {
   padding: 0.25rem 0;
   counter-increment: section;
+  counter-reset: example;
 }
 h4.section::before {
   content: counter(chapter) "." counter(section) " ";
@@ -43,7 +44,6 @@ h4.section::before {
 p {
   text-indent: 2em;
 }
-
 p::first-letter {
   text-transform: uppercase;
   font-size: 1.25em;
@@ -56,6 +56,15 @@ a {
 }
 a:hover {
   text-decoration: none;
+}
+
+.dataTables_wrapper {
+  max-width: 800px;
+  margin: 3rem auto;
+}
+
+.dt-body-center {
+  text-align: center;
 }
 
 .title {
@@ -80,24 +89,22 @@ a:hover {
   max-width: 600px;
   margin: 0 auto;
 }
-
-.toc-chapter-title {
-  display: flex;
-  justify-content: space-between;
-}
-
-.toc-sections {
-  display: none;
-  padding-left: 2rem;
-}
-
 .toc .chapter {
   margin-bottom: 0;
   padding: 0.5rem;
   font-size: 1.25rem;
 }
+.toc .sections {
+  display: none;
+  padding-left: 2rem;
+}
 .toc .section {
   font-size: 1rem;
+}
+
+.toc-chapter-title {
+  display: flex;
+  justify-content: space-between;
 }
 
 .toc-toggle-all {
@@ -109,6 +116,19 @@ a:hover {
   line-height: 2;
   vertical-align: middle;
   font-size: 1.25rem;
+}
+
+.example {
+  max-width: 800px;
+  margin: 3rem auto;
+}
+.example h5 {
+  text-align: center;
+  counter-increment: example;
+}
+.example h5::before {
+  content: "Example " counter(chapter) "." counter(example);
+  margin-right: 0.5rem;
 }
 
 /*# sourceMappingURL=book.css.map */

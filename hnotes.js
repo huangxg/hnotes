@@ -2,20 +2,20 @@ var bao = bao || {};
 bao.hnotes = {
   chapters: [
     { 
-      title: 'Introduction', 
+      title: 'Introduction', link: 'intro/intro.html',
       sections: [
         { title: 'Simple page' },
         { title: 'History' },
       ]
     }, {
-      title: 'Structures',
+      title: 'Structures', link: '#',
       sections: [
         { title: 'Top levels' },
         { title: 'Paragraphs' },
         { title: 'Headings' },
       ]
     }, {
-      title: 'Text',
+      title: 'Text', link: '#',
       sections: [
         { title: 'Highlights' },
         { title: 'Quotes' },
@@ -24,14 +24,14 @@ bao.hnotes = {
         { title: 'Tooltips' },
       ]
     }, {
-      title: 'Lists',
+      title: 'Lists', link: '#',
       sections: [
         { title: 'Unordered lists' },
         { title: 'Ordered lists' },
         { title: 'Description lists' },
       ]
     }, {
-      title: 'Links',
+      title: 'Links', link: '#',
       sections: [
         { title: 'Absolute links' },
         { title: 'Relative links' },
@@ -39,7 +39,7 @@ bao.hnotes = {
         { title: 'Targets' },
       ]
     }, {
-      title: 'Images',
+      title: 'Images', link: '#',
       sections: [
         { title: 'Basics' },
         { title: 'Sizes' },
@@ -47,7 +47,7 @@ bao.hnotes = {
         { title: 'File formats' },
       ]
     }, {
-      title: 'Tables',
+      title: 'Tables', link: '#',
       sections: [
         { title: 'Captions and headings' },
         { title: 'Borders' },
@@ -56,13 +56,13 @@ bao.hnotes = {
         { title: 'Spanning' },
       ]
     }, {
-      title: 'Media',
+      title: 'Media', link: '#',
       sections: [
         { title: 'Audios' },
         { title: 'Videos' },
       ]
     }, {
-      title: 'CSS',
+      title: 'CSS', link: '#',
       sections: [
         { title: 'CSS locations' },
         { title: 'Selectors' },
@@ -70,7 +70,7 @@ bao.hnotes = {
         { title: 'Box model' },
       ]
     }, {
-      title: 'Text Styles',
+      title: 'Text Styles', link: '#',
       sections: [
         { title: 'Fonts' },
         { title: 'Font decorations' },
@@ -78,28 +78,28 @@ bao.hnotes = {
         { title: 'Alignments' },
       ]
     }, {
-      title: 'List Styles',
+      title: 'List Styles', link: '#',
       sections: [
         { title: 'Bullets' },
         { title: 'Numbering' },
         { title: 'Positions' },
       ]
     }, {
-      title: 'Image Styles',
+      title: 'Image Styles', link: '#',
       sections: [
         { title: 'Sizes' },
         { title: 'Alignments' },
         { title: 'Backgound' },
       ]
     }, {
-      title: 'Table Styles',
+      title: 'Table Styles', link: '#',
       sections: [
         { title: 'Elements' },
         { title: 'Borders' },
         { title: 'Spacing' },
       ]
     }, {
-      title: 'Layouts',
+      title: 'Layouts', link: '#',
       sections: [
         { title: 'Positions' },
         { title: 'Floats' },
@@ -107,14 +107,14 @@ bao.hnotes = {
         { title: 'Responsive' },
       ]
     }, {
-      title: 'Web Development',
+      title: 'Web Development', link: '#',
       sections: [
         { title: 'Requirements' },
         { title: 'Navigation' },
         { title: 'Hosting' },
       ]
     }, {
-      title: 'Tools and Resources',
+      title: 'Tools and Resources', link: '#',
       sections: [
         { title: 'Text editors' },
         { title: 'Image tools' },

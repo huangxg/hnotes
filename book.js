@@ -56,17 +56,17 @@ bao.book = (() => {
       $btn.text($btn.text() == '+' ? '-' : '+');
     });
 
-    $(document).on('click', '.toc-toggle-all', function() {
+    $(document).on('click', '.toc-toggle-all a', function() {
       var $btn = $(this);
 
       if ($btn.text().includes('+')) {
         $btn.text('- Collapse All');
         $('.toc-toggle').text('-');
-        $('.toc-sections').show();
+        $('.toc .sections').show();
       } else {
         $btn.text('+ Expand All');
         $('.toc-toggle').text('+');
-        $('.toc-sections').hide();
+        $('.toc .sections').hide();
       }
     });
   }
@@ -99,10 +99,10 @@ bao.book = (() => {
       props: ['chapter'],
       template: '<div class="toc-chapter">' +
                 '  <div class="toc-chapter-title">' +
-                '    <h3 class="chapter" lang="en">{{ chapter.title }}</h3>' +
+                '    <h3 class="chapter"><a :href="chapter.link">{{ chapter.title }}</a></h3>' +
                 '    <span class="toc-toggle">+</span>' +
                 '  </div>' +
-                '  <div class="toc-sections">' +
+                '  <div class="sections">' +
                 '    <template v-for="sec in chapter.sections">' +
                 '      <slot :section="sec"></slot>' +
                 '    </template>' +
