@@ -114,11 +114,10 @@ bao.hnotes = {
         { title: 'Hosting' },
       ]
     }, {
-      title: 'Tools and Resources', link: '#',
+      title: 'Resources and Tools', link: 'tools/tools.html',
       sections: [
-        { title: 'Text editors' },
-        { title: 'Image tools' },
-        { title: 'Version control' },
+        { title: 'Resources' },
+        { title: 'Tools' },
       ]
     }
   ],

@@ -49,6 +49,10 @@ bao.book = (() => {
     expandToc();
   }
 
+  function disableUnfinishedLinks() {
+    $('.toc .chapter a[href="#"]').removeAttr('href');
+  }
+
   function expandToc() {
     $(document).on('click', '.toc-toggle', function() {
       var $btn = $(this);
@@ -117,7 +121,8 @@ bao.book = (() => {
   }
 
   return {
-    getNavbar : getNavbar,
-    init        : init,
+    disableUnfinishedLinks : disableUnfinishedLinks,
+    getNavbar              : getNavbar,
+    init                   : init,
   };
 })();

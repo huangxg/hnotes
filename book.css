@@ -1,16 +1,18 @@
 @charset "UTF-8";
 /* structures */
 body {
-  counter-reset: part chapter section example footnote;
+  counter-reset: part chapter section table example footnote;
   font-family: source-serif-pro, serif;
 }
 
 h2 {
   padding: 1.25rem 0;
 }
+
 h2.part {
   counter-increment: part;
 }
+
 h2.part::before {
   content: "第" counter(part) "部分 ";
 }
@@ -18,6 +20,7 @@ h2.part::before {
 h3 {
   padding: 1rem 0;
 }
+
 h3.chapter {
   counter-increment: chapter;
   counter-reset: section;
@@ -27,23 +30,26 @@ html:lang(en) h3.chapter::before {
   content: "Chapter " counter(chapter) " ";
   margin-right: 1rem;
 }
+
 html:lang(zh) h3.chapter::before {
   content: "第" counter(chapter) "章 ";
 }
 
 h4.section {
-  padding: 0.25rem 0;
+  padding: .25rem 0;
   counter-increment: section;
   counter-reset: example;
 }
+
 h4.section::before {
   content: counter(chapter) "." counter(section) " ";
-  margin-right: 0.5rem;
+  margin-right: .5rem;
 }
 
 p {
   text-indent: 2em;
 }
+
 p::first-letter {
   text-transform: uppercase;
   font-size: 1.25em;
@@ -54,13 +60,29 @@ p::first-letter {
 a {
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: none;
+}
+
+table caption {
+  caption-side: top;
+  text-align: center;
+  counter-increment: table;
+}
+
+table caption::before {
+  content: "Table " counter(chapter) "." counter(table) ":";
+  margin-right: 0.5rem;
 }
 
 .dataTables_wrapper {
   max-width: 800px;
   margin: 3rem auto;
+}
+
+.dataTables_wrapper .table {
+  width: 100% !important;
 }
 
 .dt-body-center {
@@ -89,22 +111,29 @@ a:hover {
   max-width: 600px;
   margin: 0 auto;
 }
+
 .toc .chapter {
   margin-bottom: 0;
   padding: 0.5rem;
   font-size: 1.25rem;
 }
+
 .toc .sections {
   display: none;
   padding-left: 2rem;
 }
+
 .toc .section {
   font-size: 1rem;
 }
 
 .toc-chapter-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .toc-toggle-all {
@@ -122,13 +151,14 @@ a:hover {
   max-width: 800px;
   margin: 3rem auto;
 }
+
 .example h5 {
   text-align: center;
   counter-increment: example;
 }
+
 .example h5::before {
-  content: "Example " counter(chapter) "." counter(example);
+  content: "Example " counter(chapter) "." counter(example) ":";
   margin-right: 0.5rem;
 }
-
 /*# sourceMappingURL=book.css.map */

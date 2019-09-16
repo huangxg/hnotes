@@ -1,6 +1,6 @@
 /* structures */
 body {
-  counter-reset: part chapter section example footnote;
+  counter-reset: part chapter section table example footnote;
   font-family: source-serif-pro, serif;
 }
 
@@ -59,9 +59,22 @@ a {
   }
 }
 
+table caption {
+  caption-side: top;
+  text-align: center;
+  counter-increment: table;
+  &::before {
+    content: "Table " counter(chapter) "." counter(table) ":";
+    margin-right: 0.5rem;
+  }
+}
+
 .dataTables_wrapper {
   max-width: 800px;
   margin: 3rem auto;
+  .table {
+    width: 100% !important;
+  }
 }
 
 .dt-body-center {
@@ -126,7 +139,7 @@ a {
     text-align: center;
     counter-increment: example;
     &::before {
-      content: "Example " counter(chapter) "." counter(example);
+      content: "Example " counter(chapter) "." counter(example) ":";
       margin-right: 0.5rem;
     }
   }

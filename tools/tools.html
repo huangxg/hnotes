@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <link rel="stylesheet" href="../book.css">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" 
+    integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" 
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script src="../book.js"></script>
+  <script src="../util.js"></script>
+
+  <title>Tools and Resources</title>
+</head>
+<body style="counter-reset: chapter 15">
+  <header id="header"></header>
+
+  <div class="container">
+    <div class="title">
+      <h3 class="chapter">Tools and Resources</h3>
+    </div>
+
+    <h4 class="section">Resources</h4>
+    <table id="res-table" class="table table-sm table-striped">
+      <caption>Resources</caption>
+    </table>
+
+    <h4 class="section">Tools</h4>
+    <table id="tools-table" class="table table-sm table-striped">
+      <caption>Resources</caption>
+    </table>
+
+  </div>
+
+  <script>
+    $(() => {
+      $('#header').append(bao.book.getNavbar('Contents', 1));
+
+      var res = {
+        cols: [
+          { title: 'Title'    , type: 'string' },
+          { title: 'Provider' , type: 'string' },
+        ],
+        data: [
+          [ '<a href="https://online-learning.harvard.edu/course/cs50-introduction-computer-science">CS50</a>', 'Harvard University' ],
+          [ '<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML elements reference</a>', 'Mozilla', '' ],
+          [ '<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS reference</a>', 'Mozilla', '' ]
+        ]
+      };
+      bao.util.datatable('res-table', res, { ordering: false }, false);
+
+      var tools = {
+        cols: [
+          { title: 'Title'    , type: 'string' },
+          { title: 'Provider' , type: 'string' },
+        ],
+        data: [
+          [ '<a href="https://brew.sh/">Homebrew</a>', 'Max Howell' ],
+          [ '<a href="https://chocolatey.org/">Chocolatey</a>', 'Chocolatey Software' ],
+          [ '<a href="https://www.google.com/chrome/">Chrome</a>', 'Google' ],
+          [ '<a href="https://code.visualstudio.com/">Visual Studio Code</a>', 'Microsoft' ],
+          [ '<a href="https://github.com/">GitHub</a>', 'Microsoft' ],
+        ]
+      }
+      bao.util.datatable('tools-table', tools, { ordering: false }, false);
+    });
+  </script>
+</body>
+</html>

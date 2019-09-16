@@ -38,30 +38,51 @@
     </div>
 
     <h4 class="section">History</h4>
-    <table id="html-history" class="table table-sm table-striped" style="width: 600px; margin: 3rem auto;">
+    <table id="computer-history" class="table table-sm table-striped">
+      <caption>Computer History</caption>
     </table>
+
+    <table id="web-history" class="table table-sm table-striped">
+      <caption>Web History</caption>
+    </table>
+
   </div>
 
   <script>
-    
     $(() => {
       $('#header').append(bao.book.getNavbar('Contents', 1));
 
-      grahamReturns = {
+      var computerHistory = {
         cols: [
-          { title: 'Version',            type: 'string', align: 'center' },
-          { title: 'Time',               type: 'string', align: 'center' },
-          { title: 'People/Orgnization', type: 'string' }, 
+          { title: 'Event/theory',  type: 'string', align: 'center' },
+          { title: 'Time',          type: 'string', align: 'center' },
+          { title: 'People',        type: 'string' },
         ],
         data: [
-          [ 'HTML',   1991, 'Tim Berners-Lee, CERN' ],
-          [ 'HTML 2', 1995, 'Internet Engineering Task Force (IETF)' ],
-          [ 'HTML 3', 1997, 'IETF' ],
-          [ 'HTML 4', 1997, 'World Wide Web Consortium (W3C)'],
-          [ 'HTML 5', 2014, 'W3C'],
+          [ 'Universal Turing machine', 1936, 'Alan Turing' ],
+          [ 'Von Neumann architecture', 1945, 'John von Neumann' ],
+          [ 'ENIAC', 1946, 'John Mauchly, J. Presper Eckert, 朱传榘' ],
+          [ 'Unix', 1970, 'Ken Thompson, Dennis Ritchie, Brian Kernighan, Douglas McIlroy, Joe Ossanna' ],
+          [ 'C', 1972, 'Dennis Ritchie' ],
+          [ 'Python', 1990, 'Guido van Rossum' ],
+          [ 'Java', 1995, 'James Gosling' ],
         ]
       };
-      bao.util.datatable('html-history', grahamReturns, { ordering: false }, false);
+      bao.util.datatable('computer-history', computerHistory, { ordering: false }, false);
+
+      var webHistory = {
+        cols: [
+          { title: 'Version', type: 'string', align: 'center' },
+          { title: 'Time',    type: 'string', align: 'center' },
+          { title: 'People',  type: 'string' }, 
+        ],
+        data: [
+          [ 'HTML',       1991, 'Tim Berners-Lee' ],
+          [ 'JavaScript', 1995, 'Brendan Eich' ],
+          [ 'CSS',        1996, 'Håkon Wium, LieBert Bos' ],
+        ]
+      };
+      bao.util.datatable('web-history', webHistory, { ordering: false }, false);
 
     });
   </script>
