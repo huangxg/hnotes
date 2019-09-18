@@ -38,7 +38,6 @@ html:lang(zh) h3.chapter::before {
 h4.section {
   padding: .25rem 0;
   counter-increment: section;
-  counter-reset: example;
 }
 
 h4.section::before {

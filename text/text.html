@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <link rel="stylesheet" href="../book.css">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" 
+    integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" 
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script src="../book.js"></script>
+  <script src="../util.js"></script>
+
+  <title>Text</title>
+</head>
+<body style="counter-reset: chapter 2 table example">
+  <header id="header"></header>
+  <div class="container">
+    <div class="title">
+      <h3 class="chapter">Text</h3>
+    </div>
+
+    <h4 class="section">Highlights</h4>
+    <div class="example">
+      <script src="https://gist.github.com/huangxg/564c2e9e122e7e6ce6cdc1348cfe8d77.js"></script>
+      <h5><a href="highlights.html">Highlights</a></h5>
+    </div>
+
+    <h4 class="section">Quotes</h4>
+    <h4 class="section">Verbatim</h4>
+    <h4 class="section">Superscripts and subscripts</h4>
+    <h4 class="section">Tooltips</h4>
+  </div>
+
+  <script>
+    $(() => {
+      $('#header').append(bao.book.getNavbar('Contents', 1));
+    });
+  </script>
+</body>
+</html>

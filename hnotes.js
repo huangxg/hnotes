@@ -8,14 +8,14 @@ bao.hnotes = {
         { title: 'History' },
       ]
     }, {
-      title: 'Structures', link: '#',
+      title: 'Structures', link: 'structures/structures.html',
       sections: [
         { title: 'Top levels' },
         { title: 'Paragraphs' },
         { title: 'Headings' },
       ]
     }, {
-      title: 'Text', link: '#',
+      title: 'Text', link: 'text/text.html',
       sections: [
         { title: 'Highlights' },
         { title: 'Quotes' },
@@ -107,7 +107,7 @@ bao.hnotes = {
         { title: 'Responsive' },
       ]
     }, {
-      title: 'Web Development', link: '#',
+      title: 'Best Practices', link: '#',
       sections: [
         { title: 'Requirements' },
         { title: 'Navigation' },
