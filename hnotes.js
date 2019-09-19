@@ -21,7 +21,6 @@ bao.hnotes = {
         { title: 'Quotes' },
         { title: 'Verbatim' },
         { title: 'Superscripts and subscripts' },
-        { title: 'Tooltips' },
       ]
     }, {
       title: 'Lists', link: '#',
