@@ -23,11 +23,12 @@ bao.hnotes = {
         { title: 'Superscripts and subscripts' },
       ]
     }, {
-      title: 'Lists', link: '#',
+      title: 'Lists', link: 'lists/lists.html',
       sections: [
-        { title: 'Unordered lists' },
-        { title: 'Ordered lists' },
-        { title: 'Description lists' },
+        { title: 'Unordered list' },
+        { title: 'Ordered list' },
+        { title: 'Description list' },
+        { title: 'Nested list' },
       ]
     }, {
       title: 'Links', link: '#',
