@@ -31,12 +31,12 @@ bao.hnotes = {
         { title: 'Nested list' },
       ]
     }, {
-      title: 'Links', link: '#',
+      title: 'Links', link: 'links/links.html',
       sections: [
-        { title: 'Absolute links' },
-        { title: 'Relative links' },
-        { title: 'Anchors' },
+        { title: 'Absolute and relative links' },
+        { title: 'Anchor' },
         { title: 'Targets' },
+        { title: 'Email link' }
       ]
     }, {
       title: 'Images', link: '#',
