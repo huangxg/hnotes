@@ -39,7 +39,7 @@ bao.hnotes = {
         { title: 'Email link' }
       ]
     }, {
-      title: 'Images', link: '#',
+      title: 'Images', link: 'images/images.html',
       sections: [
         { title: 'Basics' },
         { title: 'Sizes' },
