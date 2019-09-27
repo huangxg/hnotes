@@ -47,11 +47,11 @@ bao.hnotes = {
         { title: 'File formats' },
       ]
     }, {
-      title: 'Tables', link: '#',
+      title: 'Tables', link: 'tables/tables.html',
       sections: [
+        { title: 'Basics' },
         { title: 'Captions and headings' },
-        { title: 'Borders' },
-        { title: 'Spacing' },
+        { title: 'Borders and spacing' },
         { title: 'Alignments' },
         { title: 'Spanning' },
       ]
