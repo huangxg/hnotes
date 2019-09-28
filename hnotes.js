@@ -56,7 +56,7 @@ bao.hnotes = {
         { title: 'Spanning' },
       ]
     }, {
-      title: 'Media', link: '#',
+      title: 'Media', link: 'media/media.html',
       sections: [
         { title: 'Audios' },
         { title: 'Videos' },
