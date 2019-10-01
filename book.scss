@@ -49,6 +49,29 @@ p {
     font-family: Garamond, Palatino, serif;
     letter-spacing: 1px;
   }
+  &.reset {
+    &::first-letter {
+      text-transform: none;
+      font-size: 1rem;
+      letter-spacing: 0;
+    }
+  }
+}
+
+blockquote {
+  margin-bottom: 48px;
+  p {
+    padding: 16px;
+    background: #eee;
+    border-radius: 4px;
+  }
+  footer {
+    padding-right: 48px;
+    text-align: right;
+    &::before {
+      content: "-- "
+    }
+  }
 }
 
 a {
