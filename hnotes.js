@@ -5,12 +5,14 @@ bao.hnotes = {
       title: 'Introduction', link: 'intro/intro.html',
       sections: [
         { title: 'Simple page' },
+        { title: 'Objectives' },
+        { title: 'Methodology' },
         { title: 'History' },
       ]
     }, {
       title: 'Structures', link: 'structures/structures.html',
       sections: [
-        { title: 'Top levels' },
+        { title: 'Top structures' },
         { title: 'Paragraphs' },
         { title: 'Headings' },
       ]

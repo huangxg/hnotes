@@ -1,6 +1,6 @@
 /* structures */
 body {
-  counter-reset: part chapter section table example footnote;
+  counter-reset: part chapter section figure table example footnote;
   font-family: source-serif-pro, serif;
 }
 
@@ -87,6 +87,14 @@ table caption {
   counter-increment: table;
   &::before {
     content: "Table " counter(chapter) "." counter(table) ":";
+    margin-right: 0.5rem;
+  }
+}
+
+figure figcaption {
+  counter-increment: figure;
+  &::before {
+    content: "Fig " counter(chapter) "." counter(figure) ":";
     margin-right: 0.5rem;
   }
 }

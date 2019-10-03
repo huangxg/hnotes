@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* structures */
 body {
-  counter-reset: part chapter section table example footnote;
+  counter-reset: part chapter section figure table example footnote;
   font-family: source-serif-pro, serif;
 }
 
@@ -97,6 +97,15 @@ table caption {
 
 table caption::before {
   content: "Table " counter(chapter) "." counter(table) ":";
+  margin-right: 0.5rem;
+}
+
+figure figcaption {
+  counter-increment: figure;
+}
+
+figure figcaption::before {
+  content: "Fig " counter(chapter) "." counter(figure) ":";
   margin-right: 0.5rem;
 }
 
