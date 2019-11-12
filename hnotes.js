@@ -64,12 +64,12 @@ bao.hnotes = {
         { title: 'Videos' },
       ]
     }, {
-      title: 'CSS', link: '#',
+      title: 'CSS', link: 'css/css.html',
       sections: [
         { title: 'CSS locations' },
         { title: 'Selectors' },
-        { title: 'Colors' },
         { title: 'Box model' },
+        { title: 'Colors' },
       ]
     }, {
       title: 'Text Styles', link: '#',

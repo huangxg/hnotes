@@ -1,0 +1,14 @@
+/* by name */
+p {
+  font-size: large;
+}
+
+/* by class */
+p.blue {
+  color: blue;
+}
+
+/* by id */
+p#upper {
+  text-transform: uppercase;
+}
