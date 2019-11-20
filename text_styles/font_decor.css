@@ -1,0 +1,19 @@
+p {
+  font-size: larger;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.underline {
+  text-decoration: underline;
+}

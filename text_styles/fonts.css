@@ -1,0 +1,14 @@
+.serif {
+  font-family: serif;
+  font-size: x-large;
+}
+
+.sans-serif {
+  font-family: sans-serif;
+  font-size: large;
+}
+
+.monospace {
+  font-family: monospace;
+  font-size: 16pt;
+}

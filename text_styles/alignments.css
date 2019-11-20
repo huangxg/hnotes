@@ -1,0 +1,21 @@
+div {
+  width: 280px;
+  border: 1px solid silver;
+  padding: 8px;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.justify {
+  text-align: justify;
+}

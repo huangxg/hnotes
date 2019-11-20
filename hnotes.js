@@ -72,7 +72,7 @@ bao.hnotes = {
         { title: 'Colors' },
       ]
     }, {
-      title: 'Text Styles', link: '#',
+      title: 'Text Styles', link: 'text_styles/text_styles.html',
       sections: [
         { title: 'Fonts' },
         { title: 'Font decorations' },
