@@ -1,0 +1,19 @@
+li {
+  font-size: x-large;
+}
+
+.decimal {
+  list-style-type: decimal;
+}
+
+.lower-alpha {
+  list-style-type: lower-alpha;
+}
+
+.lower-greek {
+  list-style-type: lower-greek;
+}
+
+.lower-roman {
+  list-style-type: lower-roman;
+}

@@ -80,11 +80,11 @@ bao.hnotes = {
         { title: 'Alignments' },
       ]
     }, {
-      title: 'List Styles', link: '#',
+      title: 'List Styles', link: 'list_styles/list_styles.html',
       sections: [
-        { title: 'Bullets' },
-        { title: 'Numbering' },
-        { title: 'Positions' },
+        { title: 'List bullets' },
+        { title: 'List numbers' },
+        { title: 'List positions' },
       ]
     }, {
       title: 'Image Styles', link: '#',

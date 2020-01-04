@@ -1,0 +1,13 @@
+div {
+  width: 300px;
+}
+
+li {
+  padding-bottom: 4px;
+}
+
+.inside {
+  list-style: inside upper-roman;
+  /* list-style-type: upper-roman; */
+  /* list-style-position: inside; */
+}
