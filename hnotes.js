@@ -87,11 +87,11 @@ bao.hnotes = {
         { title: 'List positions' },
       ]
     }, {
-      title: 'Image Styles', link: '#',
+      title: 'Image Styles', link: 'image_styles/image_styles.html',
       sections: [
-        { title: 'Sizes' },
-        { title: 'Alignments' },
-        { title: 'Backgound' },
+        { title: 'Image sizes' },
+        { title: 'Image positions' },
+        { title: 'Image as backgound' },
       ]
     }, {
       title: 'Table Styles', link: '#',

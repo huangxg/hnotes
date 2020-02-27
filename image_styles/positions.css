@@ -1,0 +1,22 @@
+div {
+  height: 240px;
+}
+
+img {
+  width: 120px;
+}
+
+.left {
+  float: left;
+  margin-right: 16px;
+}
+
+.center {
+  display: block;
+  margin: 16px auto;
+}
+
+.right {
+  float: right;
+  margin-left: 16px;
+}

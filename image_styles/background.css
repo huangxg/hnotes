@@ -1,0 +1,15 @@
+.img-bg {
+  height: 240px;
+  line-height: 240px;
+  margin: 16px;
+  background-image: url(../img/css3.png);
+  font-size: x-large;
+}
+
+.no-repeat {
+  background-repeat: no-repeat;
+}
+
+.center {
+  background-position: center;
+}
