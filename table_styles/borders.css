@@ -1,0 +1,9 @@
+table {
+  border-top: solid 2px;
+  border-bottom: solid 2px;
+  border-spacing: 0;
+}
+
+th {
+  border-bottom: solid 1px;
+}

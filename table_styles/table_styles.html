@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="../book.css">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" 
+    integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" 
+    crossorigin="anonymous"></script>
+  <script src="../book.js"></script>
+  <script src="../util.js"></script>
+
+  <title>Table Styles</title>
+</head>
+<body style="counter-reset: chapter 12 table example">
+  <header id="header"></header>
+
+  <div class="container mb-5">
+    <div class="title">
+      <h3 class="chapter">Table Styles</h3>
+    </div>
+
+    <h4 class="section">Table elements</h4>
+    <div class="example">
+      <script src="https://gist.github.com/huangxg/684ea73742ae2f3598238b328648b933.js?file=table_styles_elements.html"></script>
+      <script src="https://gist.github.com/huangxg/684ea73742ae2f3598238b328648b933.js?file=table_styles_elements.css"></script>
+      <h5><a href="elements.html">Table elements</a></h5>
+    </div>
+
+    <h4 class="section">Table borders</h4>
+    <div class="example">
+      <script src="https://gist.github.com/huangxg/684ea73742ae2f3598238b328648b933.js?file=table_styles_borders.html"></script>
+      <script src="https://gist.github.com/huangxg/684ea73742ae2f3598238b328648b933.js?file=table_styles_borders.css"></script>
+      <h5><a href="borders.html">Table borders</a></h5>
+    </div>
+
+    <h4 class="section">Table spacing</h4>
+    <div class="example">
+      <script src="https://gist.github.com/huangxg/684ea73742ae2f3598238b328648b933.js?file=table_styles_spacing.html"></script>
+      <script src="https://gist.github.com/huangxg/684ea73742ae2f3598238b328648b933.js?file=table_styles_spacing.css"></script>
+      <h5><a href="spacing.html">Table spacing</a></h5>
+    </div>
+
+    <hr>
+    <h4>Exercises</h4>
+    <ol>
+      <li>Create a HTML page and a new CSS file, link the CSS file in the HTML page.</li>
+      <li>In the page, add a table with caption, headings, and regular cells.</li>
+      <li>In the CSS, add styles for caption, headings, and cells. In the page, apply the styles.</li>
+      <li>In the CSS, add styles for padding of headings and cells. In the page, apply the styles.</li>
+    </ol>
+  </div>
+
+  <script>
+    $(() => {
+      $('#header').append(bao.book.getNavbar('Contents', 1));
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+th {
+  padding: 8px;
+}
+
+td {
+  padding: 4px;
+}
+
+tr.even {
+  background-color: silver;
+}

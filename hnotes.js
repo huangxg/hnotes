@@ -94,7 +94,7 @@ bao.hnotes = {
         { title: 'Image as backgound' },
       ]
     }, {
-      title: 'Table Styles', link: '#',
+      title: 'Table Styles', link: 'table_styles/table_styles.html',
       sections: [
         { title: 'Elements' },
         { title: 'Borders' },
