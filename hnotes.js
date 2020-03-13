@@ -101,12 +101,12 @@ bao.hnotes = {
         { title: 'Spacing' },
       ]
     }, {
-      title: 'Layouts', link: '#',
+      title: 'Layouts', link: 'layouts/layouts.html',
       sections: [
-        { title: 'Positions' },
+        { title: 'Box positions' },
         { title: 'Floats' },
-        { title: 'Fixed width' },
-        { title: 'Responsive' },
+        { title: 'Fixed width page' },
+        { title: 'Responsive page' },
       ]
     }, {
       title: 'Best Practices', link: '#',

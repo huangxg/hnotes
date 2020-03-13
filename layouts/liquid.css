@@ -1,0 +1,25 @@
+body {
+  width: 90%;
+  margin: 16px auto;
+}
+
+#header {
+  height: 48px;
+  margin: 16px 0;
+  text-align: center;
+}
+
+.col {
+  float: left;
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+  background-color: lavender;
+}
+
+#footer {
+  position: fixed;
+  width: 100%;
+  bottom: 48px;
+  text-align: center;
+}

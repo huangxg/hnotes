@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* structures */
 body {
-  counter-reset: part chapter section figure table example footnote;
+  counter-reset: part chapter section subsection figure table example footnote;
   font-family: source-serif-pro, serif;
 }
 
@@ -38,10 +38,21 @@ html:lang(zh) h3.chapter::before {
 h4.section {
   padding: .25rem 0;
   counter-increment: section;
+  counter-reset: subsection;
 }
 
 h4.section::before {
   content: counter(chapter) "." counter(section) " ";
+  margin-right: .5rem;
+}
+
+h5.subsection {
+  margin-top: 1rem;
+  counter-increment: subsection;
+}
+
+h5.subsection::before {
+  content: counter(chapter) "." counter(section) "." counter(subsection) " ";
   margin-right: .5rem;
 }
 

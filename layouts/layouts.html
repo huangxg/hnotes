@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="../book.css">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" 
+    integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" 
+    crossorigin="anonymous"></script>
+  <script src="../book.js"></script>
+  <script src="../util.js"></script>
+
+  <title>Layouts</title>
+</head>
+<body style="counter-reset: chapter 13 table example">
+  <header id="header"></header>
+
+  <div class="container mb-5">
+    <div class="title">
+      <h3 class="chapter">Layouts</h3>
+    </div>
+
+    <h4 class="section">Box positions</h4>
+    <h5 class="subsection">Element types</h5>
+    <ul>
+      <li>block elements: <code>div</code>, <code>p</code>, <code>ul/ol/li</code></li>
+      <li>inline elements: <code>span</code>, <code>a</code>, <code>img</code></li>
+    </ul>
+
+    <h5 class="subsection">Normal flow</h5>
+    <code>position: static</code>
+
+    <h5 class="subsection">Relative position</h5>
+    <div class="example">
+      <script src="https://gist.github.com/huangxg/684ea73742ae2f3598238b328648b933.js?file=layouts_pos_relative.html"></script>
+      <script src="https://gist.github.com/huangxg/684ea73742ae2f3598238b328648b933.js?file=layouts_pos_relative.css"></script>
+      <h5><a href="pos_relative.html">Relative position</a></h5>
+    </div>
+
+    <h5 class="subsection">Absolute position</h5>
+    <div class="example">
+      <script src="https://gist.github.com/huangxg/684ea73742ae2f3598238b328648b933.js?file=layouts_pos_absolute.html"></script>
+      <script src="https://gist.github.com/huangxg/684ea73742ae2f3598238b328648b933.js?file=layouts_pos_absolute.css"></script>
+      <h5><a href="pos_absolute.html">Absolute position</a></h5>
+    </div>
+
+    <h5 class="subsection">Fixed position</h5>
+    <div class="example">
+      <script src="https://gist.github.com/huangxg/684ea73742ae2f3598238b328648b933.js?file=layouts_pos_fixed.html"></script>
+      <script src="https://gist.github.com/huangxg/684ea73742ae2f3598238b328648b933.js?file=layouts_pos_fixed.css"></script>
+      <h5><a href="pos_fixed.html">Fixed position</a></h5>
+    </div>
+
+    <h4 class="section">Floats</h4>
+    <div class="example">
+      <script src="https://gist.github.com/huangxg/684ea73742ae2f3598238b328648b933.js?file=layouts_floats.html"></script>
+      <script src="https://gist.github.com/huangxg/684ea73742ae2f3598238b328648b933.js?file=layouts_floats.css"></script>
+      <h5><a href="floats.html">Floats</a></h5>
+    </div>
+
+    <h4 class="section">Fixed page</h4>
+    <div class="example">
+      <script src="https://gist.github.com/huangxg/684ea73742ae2f3598238b328648b933.js?file=layouts_fixed_width.html"></script>
+      <script src="https://gist.github.com/huangxg/684ea73742ae2f3598238b328648b933.js?file=layouts_fixed_width.css"></script>
+      <h5><a href="fixed_width.html">Fixed width page</a></h5>
+    </div>
+
+    <h4 class="section">Liquid page</h4>
+    <div class="example">
+      <script src="https://gist.github.com/huangxg/684ea73742ae2f3598238b328648b933.js?file=layouts_liquid.html"></script>
+      <script src="https://gist.github.com/huangxg/684ea73742ae2f3598238b328648b933.js?file=layouts_liquid.css"></script>
+      <h5><a href="liquid.html">Liquid page</a></h5>
+    </div>
+
+    <hr>
+    <h4>Exercises</h4>
+    <ol>
+      <li>Create a HTML page and a new CSS file, link the CSS file in the HTML page.</li>
+      <li>In the page, add 3 paragraphs.</li>
+      <li>In the CSS, add 3 styles for relative, absolute, and fixed positions. Apply the styles to the above paragraphs.</li>
+      <li>In the page, add 3 more paragraphs. In the CSS, add a float style. Apply the styles to these paragraphs.</li>
+    </ol>
+  </div>
+
+  <script>
+    $(() => {
+      $('#header').append(bao.book.getNavbar('Contents', 1));
+    });
+  </script>
+
+</body>
+</html>
