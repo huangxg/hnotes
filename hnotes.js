@@ -109,11 +109,11 @@ bao.hnotes = {
         { title: 'Responsive page' },
       ]
     }, {
-      title: 'Best Practices', link: '#',
+      title: 'Best Practices', link: 'best_practices/best_practices.html',
       sections: [
-        { title: 'Requirements' },
-        { title: 'Navigation' },
-        { title: 'Hosting' },
+        { title: 'Page structure' },
+        { title: 'Naming' },
+        { title: 'Colors and images' },
       ]
     }, {
       title: 'Resources and Tools', link: 'tools/tools.html',
