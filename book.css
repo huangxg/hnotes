@@ -157,17 +157,15 @@ figure figcaption::before {
 }
 
 .toc .chapter {
+  display: inline-block;
   margin-bottom: 0;
   padding: 0.5rem;
   font-size: 1.25rem;
 }
 
-.toc .sections {
+.toc .section {
   display: none;
   padding-left: 2rem;
-}
-
-.toc .section {
   font-size: 1rem;
 }
 
@@ -186,6 +184,7 @@ figure figcaption::before {
 }
 
 .toc-toggle {
+  float: right;
   line-height: 2;
   vertical-align: middle;
   font-size: 1.25rem;

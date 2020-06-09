@@ -143,15 +143,14 @@ figure figcaption {
   max-width: 600px;
   margin: 0 auto;
   .chapter {
+    display: inline-block;
     margin-bottom: 0;
     padding: 0.5rem;
     font-size: 1.25rem;
   }
-  .sections {
+  .section {
     display: none;
     padding-left: 2rem;
-  }
-  .section {
     font-size: 1rem;
   }
 }
@@ -167,6 +166,7 @@ figure figcaption {
 }
 
 .toc-toggle {
+  float: right;
   line-height: 2;
   vertical-align: middle;
   font-size: 1.25rem;

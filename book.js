@@ -56,7 +56,7 @@ bao.book = (() => {
   function expandToc() {
     $(document).on('click', '.toc-toggle', function() {
       var $btn = $(this);
-      $btn.parent().next().toggle('show');
+      $btn.parent().find('h4.section').toggle('show');
       $btn.text($btn.text() == '+' ? '-' : '+');
     });
 
@@ -66,11 +66,11 @@ bao.book = (() => {
       if ($btn.text().includes('+')) {
         $btn.text('- Collapse All');
         $('.toc-toggle').text('-');
-        $('.toc .sections').show();
+        $('.toc .section').show();
       } else {
         $btn.text('+ Expand All');
         $('.toc-toggle').text('+');
-        $('.toc .sections').hide();
+        $('.toc .section').hide();
       }
     });
   }
@@ -102,15 +102,11 @@ bao.book = (() => {
     Vue.component('toc-chapter', {
       props: ['chapter'],
       template: '<div class="toc-chapter">' +
-                '  <div class="toc-chapter-title">' +
-                '    <h3 class="chapter"><a :href="chapter.link">{{ chapter.title }}</a></h3>' +
-                '    <span class="toc-toggle">+</span>' +
-                '  </div>' +
-                '  <div class="sections">' +
-                '    <template v-for="sec in chapter.sections">' +
-                '      <slot :section="sec"></slot>' +
-                '    </template>' +
-                '  </div>' +
+                '  <h3 class="chapter"><a :href="chapter.link">{{ chapter.title }}</a></h3>' +
+                '  <span class="toc-toggle">+</span>' +
+                '  <template v-for="sec in chapter.sections">' +
+                '    <slot :section="sec"></slot>' +
+                '  </template>' +
                 '</div>',
     });
 
